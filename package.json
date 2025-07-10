@@ -5,6 +5,8 @@
   "scripts": {
     "start": "nodemon index.js",
     "starts": "nodemon passportLogin.js",
+    "startj": "nodemon jwtserver.js",
+    "starta": "nodemon jwtauthserver.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +19,7 @@
     "express": "^5.1.0",
     "express-flash": "^0.0.2",
     "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.16.2",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0"
