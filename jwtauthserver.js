@@ -20,6 +20,11 @@ app.post('/token', (req, res)=> {
     
 })
 
+app.delete('/logout', (req, res) => {
+    refreshTokens = refreshTokens.filter(token => token !== req.body.token);    
+    res.sendStatus(204); 
+})
+
 app.listen(4000, () => {     
     console.log('Server is running on port 4000');
 }                       
